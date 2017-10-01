@@ -10,7 +10,7 @@ module.exports = (req, res, next) => {
 
     const geo = geoip.lookup(ip)
     if(!geo) return next(
-        new BadRequestError('Invalid IP addrees. Cannot find a match.')
+        new BadRequestError('Invalid IP address. Cannot find a match.')
     )
 
     res.send({geo: geo})

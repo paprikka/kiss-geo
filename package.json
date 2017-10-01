@@ -1,0 +1,18 @@
+{
+  "name": "kiss-geoip",
+  "version": "1.0.0",
+  "description": "KISS GeoIP server. Ready to deploy on heroku. (Just a few drops of coffee and stir.)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "heroku local -f Procfile.dev"
+  },
+  "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
+  "license": "MIT",
+
+  "dependencies": {
+    "@types/restify": "^5.0.5",
+    "geoip-lite": "^1.2.1",
+    "restify": "^6.0.1",
+    "restify-errors": "^5.0.0"
+  }
+}
